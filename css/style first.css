@@ -1,0 +1,549 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* HEADER */
+.parent1{
+    width: 1380;
+    height: 60;
+    background-color: black;
+    opacity: .6;
+    overflow: auto;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+}
+.logo{
+    width: 190px;
+    height: 60px;
+    margin-left: 100;
+    float: left;
+}
+.ul1{
+    list-style-type: none;
+    float: left;
+    padding-left: 300px;
+    padding-top: 20px;
+}
+.ul1 li{
+    display: inline-block;
+    padding-left: 20px;
+}
+.ul1 li a{
+    text-decoration: none;
+    color: green;
+}
+/* الواجهة الاولي */
+.parent2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+/* .background1{
+    width: 100vw;
+    height: 100vh;
+} */
+.opicity{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color:rgba(0, 128, 0, 0.5);
+    position: absolute;                                                     
+}
+.text{
+    width: 50%;
+    position: absolute;
+    top: 51%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+.title1{
+    font-size: 40px;
+}
+.p1{
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+.but1{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    font-size: 20px;
+    border: 0%;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    margin-left: 150px;
+}
+.but1:hover{
+    opacity: .8;
+}
+.but2{
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    font-size: 20px;
+    border: 0%;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.but2:hover{
+    opacity: .8;
+}
+
+/* الجزء اللى تحت الواجهة الاولي */
+.title2{
+    margin-left: 450px;
+    margin-top: 80px;
+    font-size: 35px;
+}
+.welcome_container{
+    width: 80%;
+    margin: auto;
+}
+.welcome_to_website{
+    overflow: auto;
+    height: 430px;
+    /* position: relative; */
+}
+.welcomesquare{
+    display: block;
+    padding: 17 13;
+    margin-left: 30px;
+    margin-top: 70px;
+    font-size: 17px;
+    width: 300px;
+    height: 200px;
+    border: 0.8px solid;
+    border-color: rgb(9, 114, 23);
+    float: left;
+    position: relative;
+    }
+
+.welcomesquare a{
+    margin-left: 100px;
+    text-decoration: none;
+}
+.titlewelcome{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.pwelcome{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.iwelcome{
+    font-size: 35px;
+    padding-left: 120px;
+    margin-top: 10px;
+    color: rgb(9, 196, 9);
+}
+.welcomesquare:after{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0%;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.welcomesquare:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+/* جزء الصور الاول */
+.featuredworks{
+    font-size: 40;
+    margin: 80 30%;
+}
+.work_content{
+    overflow: auto;
+    background-color: rgba(122, 163, 122, 0.842);
+}
+.work_item{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding:20px;
+}
+.work_item img{
+    width: 100%;
+}
+.work_item .work_overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition:opacity 1s;
+}
+.work_item:hover .work_overlay{
+    opacity:1;
+}
+.work_overlay a i{
+    line-height: 40px;
+}
+/* جزء الاوفر */
+.offer_header{
+    margin: 80 480;
+    font-size: 40;
+}
+.offer_content{
+    overflow: auto;
+    position: relative;
+}
+.offer_item{
+    display: block;
+    padding: 17 13;
+    margin-left: 30px;
+    margin-top: 70px;
+    font-size: 17px;
+    width: 300px;
+    height: 200px;
+    border: 0.8px solid;
+    border-color: rgb(9, 114, 23);
+    float: left;
+    position: relative;
+}
+.offer_title{
+    font-size: 25px;
+    padding-left: 45px;
+}
+.offer_p{
+    padding-left: 45px;
+    padding-top: 8px;
+}
+.offer_item i{
+    display: block;
+    color: #6195ff;
+    font-size: 30px;   
+}
+.offer_item:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    opacity: 0%;
+}
+.offer_item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+.offer_item:hover .offer_title{
+    color: rgb(70, 201, 70);
+    transition: 0.5s;
+}
+
+/* جزء الاختيار */
+.choose_content{
+    margin: 150px 0px;
+    overflow: auto;
+}
+.choose_title{
+    font-size: 40px;
+}
+.choose_item{
+    float: left;
+}
+.choose_img{
+    float: left;
+    padding-left: 150px;
+    
+}
+.choose_p{
+    height: 40px;
+    font-size: 20px;
+    margin-top: 70px;
+    color: rgb(72, 77, 72);
+}
+.choose_p1{
+    font-size: 20px;
+    margin-top: -8px;
+    color: rgb(72, 77, 72);
+}
+.choose_list{
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(72, 77, 72);
+    
+}
+.choose_list li{
+    margin-top: 13px;
+}
+/* جزء الصور اللى بينزل الاول*/
+.container2{
+    width:1380px ;
+    height: 100px;
+}
+.image1_image1{
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+/* جزء الاسعار */
+.pricing_table{
+    margin-left: 36%;
+    font-size: 40;
+}
+.pricing_content{
+    overflow: auto;
+    position: relative;
+    margin-top: 90;
+}
+.pricing_item{
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 28 15;
+    border: 1px solid green;
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+}
+.pricing_text{
+    font-size: 17;
+}
+.pricing_permonth{
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    padding: 8px 0;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+.doller{
+    font-size: 50px;
+}
+.month{
+    font-weight: bold;
+    font-size: 15px;
+}
+.pricing_purchase{
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+}
+.pricing_list{
+    list-style: none;
+}
+.pricing_list li{
+    line-height: 1.8;
+}
+.pricing_item:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.pricing_item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 1s;
+}
+.pricing_item:hover .pricing_text{
+    color: rgb(70, 201, 70);
+}
+.pricing_item:hover .pricing_permonth{
+    color: rgb(70, 201, 70);
+}
+/* جزء التيم */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.ourteam{
+    margin: 80 400;
+    font-size: 40;
+}
+.team_content{
+    overflow: auto;
+    position: relative;
+    margin-top: 90;
+}
+.team_item{
+    display: block;
+    float: left;
+    width: 33%;
+    padding: 17px 13px;
+    text-align: center;
+    position: relative;
+}
+.team_image{
+    background-color: rgb(92, 155, 67);
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 10 10;
+}
+.team_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.team_item:hover .team_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team_overlay a{
+    display: block;
+    width: 40;
+    height: 40;
+    background-color: rgb(102, 102, 207);
+    color: white;
+    margin-left: auto;
+}
+.team_overlay a i{
+    line-height: 2;
+}
+.team_item:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.team_item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+}
+/* جزءالاخبار */
+.news_title{
+    margin: 80 400;
+    font-size: 40;
+}
+.news_item{
+    display: block;
+    float: left;
+    width: 30%;
+    padding: 28 15;
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+    overflow: auto;
+}
+.news_item:after{
+    content: "";
+    position: absolute;
+
+    width: 0%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0%;
+    background-color: black;
+}
+.news_item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+.news_image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    padding: 10 10;
+}
+.p_news{
+    float: left;
+    padding-left: 5px;
+}
+.first_news_text i{
+    float: left;
+    padding-left: 1px;
+    color: green;
+}
+.first_news_text{
+    padding: 25 10;
+}
+.second_news{
+    padding: 25 25;
+}
+.second_news_text a{
+    
+    text-decoration: none;
+}
+/* الجزء الاخير */
+.final{
+    width: 1380;
+    height: 250;
+    background-color: black;
+    opacity: .6;
+    overflow: auto;
+    bottom: 0%;
+    z-index: 10;
+    margin-top: 300px;
+}
+.logo_final{
+    width: 190px;
+    height: 60px;
+    margin: 40px 550px;
+}
+.ul_final{
+    list-style-type: none;
+    padding-left: 500px;
+   
+}
+.ul_final li{
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 30px;
+    border: 10px fill green;
+    border-radius: 50%;
+}
+.ul_final li a{
+    text-decoration: none;
+    color: white;
+}
+.final_p{
+    text-transform: uppercase;
+    padding-left: 500px;
+    padding-top: 20px;
+    font-size: 12px;
+    color: rgb(122, 116, 116);
+}
+
+
+
+
+
